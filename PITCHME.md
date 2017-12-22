@@ -289,11 +289,13 @@ object MainEntry{
 
 - Type Hierarchy
 
-![img](../img/unified-types-diagram.svg)
+![img](docs/img/unified-types-diagram.svg)
+
++++
 
 - Type Casting
 
-![img](../img/type-casting-diagram.svg)
+![img](docs/img/type-casting-diagram.svg)
 
 - Nothing and Null
 
@@ -386,9 +388,7 @@ class Point {
   private var _x = 0
   private var _y = 0
   private val bound = 1000
-
   def x = _x
-
   def x_=(newValue: Int): Unit = {
     println("set x")
     if (newValue > bound) {
@@ -397,14 +397,11 @@ class Point {
       println("Warning")
     }
   }
-
   def y = _y
-
   def y_=(newValue: Int): Unit = {
     print("set y")
     if (newValue < bound) _y = newValue else println("warning")
   }
-
 }
 ```
 
@@ -452,11 +449,12 @@ println(showNotification(someVoiceRecording))
 
 ### 3. object
 
-object is 
-- like a util class(private constructor) which combining static methods and values.
-- not a util class(JAVA conception),often associated with its ***companions***,
-  a class with same name as object in ***same file***
+- not only like a util class(JAVA conception),but also often associated 
+with its ***companions***,a class with same name 
+as object in ***same file***
 - My Understanding in JAVA world: static methods and values for a Class
+
++++ 
 
 ```scala
 class X {
@@ -522,6 +520,8 @@ object TraitDemo{
 - extends and with 
 - class can only have one superclass but many mixin
 
++++
+
 ```scala
 abstract class A{
   val message: String
@@ -553,11 +553,9 @@ println(d.testIt())
 ### 5. Extract Object
 
 Extract Object is an object with ```unapply``` and ```apply```
-decorator like??
 
 - ```apply``` like a constructor
 - ```unapply``` takes an object and give back to arguments
-- it really confused me
 
 ```scala
 object CustomID {
@@ -593,7 +591,7 @@ object CustomIDMain{
 
 ### 6. Generic Class
 
-- Quit similar with JAVA Generic.
+- Quite similar with JAVA Generic.
 
 ```scala
 class GenericClassDemo[G] {
@@ -660,21 +658,18 @@ object GenericDemo extends App{
 ### 1. High-Order Functions
 
 High-Order functions take other functions as parameter.
-
 follow example demonstrate the function as parameter:
+
 ```scala
 val salaries=Seq(2000,7000,4000)
 println(salaries)
-
 val doubleSalary=(x:Int)=>x*2
 //function as parameter
 var promotedSalary=salaries.map(doubleSalary)
 println(promotedSalary)
-
 //another style for passing function as parameter
 promotedSalary = salaries.map(_ * 2)
 promotedSalary = salaries.map(item => item * 2)
-
 ```
 
 ---
@@ -727,6 +722,8 @@ def log(msg: String, level: String = "INFO"): Unit = {
   println(s"$msg-$level")
 }
 ```
+
++++
 
 - Named Arguments: argument with name, like python
 
