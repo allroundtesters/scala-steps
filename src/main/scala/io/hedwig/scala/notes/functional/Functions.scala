@@ -1,3 +1,5 @@
+package io.hedwig.scala.notes.functional
+
 /**
   * 1. author: patrick
   */

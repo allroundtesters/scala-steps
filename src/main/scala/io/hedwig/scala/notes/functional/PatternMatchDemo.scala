@@ -1,3 +1,5 @@
+package io.hedwig.scala.notes.functional
+
 import scala.util.Random
 
 /**

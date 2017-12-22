@@ -1,6 +1,4 @@
-package io.hedwig.scala.notes
-
-import com.sun.org.apache.xerces.internal.impl.xpath.XPath.Step
+package io.hedwig.scala.notes.oo
 
 /**
   * 1. author: patrick

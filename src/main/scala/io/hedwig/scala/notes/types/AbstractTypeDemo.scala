@@ -1,3 +1,5 @@
+package io.hedwig.scala.notes.types
+
 /**
   * 1. author: patrick
   */
