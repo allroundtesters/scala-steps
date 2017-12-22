@@ -215,9 +215,11 @@ val p3=new Point(3,2)
 //compared by value
 println(p1==p2)
 ```
+
 ---
 
 ## 7.object
+
 objects,single instances,singletons
 
 ```scala
@@ -229,6 +231,7 @@ object IDFactory{
   }
 }
 ```
+
 use like a singleton class
 
 ```scala
@@ -237,6 +240,8 @@ println(newId)
 val nextid:Int=IDFactory.create()
 println(nextid)
 ```
+
+---
 
 ## 8. trait
 
@@ -262,6 +267,8 @@ class YesMan(word:String) extends HelloMan{
 val yesMan=new YesMan("My Pleasure")
 yesMan.helloFriend("Mike")
 ```
+
+---
 
 ## 9. Main Method
 
@@ -301,6 +308,8 @@ Following elements in Scala for Object Oriented:
 - object
 - trait
 
++++ 
+
 and also some conceptions are covered:
 
 - Mixin
@@ -316,6 +325,7 @@ and also some conceptions are covered:
 - constructors
 - private members
 
+---
 
 ### 1.1 Define Class
 
@@ -369,6 +379,8 @@ in following example:
 ```_x,_y``` is private,set a value for private member,
 need to call ```x_``` function.
  
++++ 
+ 
 ```scala
 class Point {
   private var _x = 0
@@ -400,9 +412,7 @@ class Point {
 
 ### 2. case class
 
-case class is good for modeling immutable data
-
-- ```case class```
+- ```case class```is good for modeling immutable data
 - compared by structure not reference
 
 ```scala
@@ -415,6 +425,9 @@ val email2=new Email("sender","title","body")
 val sameEmail=email1==email2 //it is true
 
 ```
+
++++
+
 - Pattern Match
 
 Using case class to replace if/else, it is interesting feature compared with JAVA.
@@ -461,6 +474,7 @@ object ObjectObject{
   }
 }
 ```
+
 ---
 
 ### 4. trait
@@ -474,6 +488,8 @@ trait Iterator[A]{
   def next():A
 }
 ```
+
++++
 
 extend trait:
 
@@ -572,6 +588,7 @@ object CustomIDMain{
 }
 
 ```
+
 ---
 
 ### 6. Generic Class
@@ -599,6 +616,8 @@ class GenericClassDemo[G] {
   class Baz[GenericClassDemo]  // An invariant class
 }
 ```
+
++++
 
 - Use different type
 
@@ -674,6 +693,7 @@ def factorial(x:Int):Int={
   fact(x,1)
 }
 ```
+
 ---
 
 ### 3. For Comprehension
