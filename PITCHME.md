@@ -187,6 +187,8 @@ class Greeter(prefix:String,suffix:String){
 }
 ``` 
 
++++
+
 - create new instance and invoke method
 
 ```scala
