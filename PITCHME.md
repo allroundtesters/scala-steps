@@ -1,4 +1,4 @@
-## Scala Intro
+# Scala Intro
 
 - Scala is Object-Oriented(OO)
 - Scala is Functional (FP)
@@ -7,7 +7,7 @@
 
 ## Scala Object Oriented
 
-- EveryValue is an Object
+- Every Value is an Object
 - Class(Type) and Trait(Behavior)
 - Multiple inheritance
   * Extended By Subclassing
@@ -44,9 +44,7 @@
 
 ## Scala Basic Elements
 
-- Expressions
-  * Values
-  * Variables
+- Expressions:Values & Variables
 - Blocks
 - Functions
 - Methods
@@ -104,7 +102,7 @@ println(v2 + 123)
 
 ## 2. Blocks
 
-Like a anonymous
+Like anonymous function
 
 ```scala
 println({
@@ -149,18 +147,17 @@ println(add(12, 23))
 ```
 
 - multiple parameter lists
-```scala
 
+```scala
 def mulParameterLists(x: Int, y: Int)(z: Int): Int = {
   (x + y) * z
 }
 println(mulParameterLists(1, 2)(23))
-
 ```
 
 - no parameters
-```scala
 
+```scala
 def noArgs: String = System.getProperty("name", "name")
 println("Hello " + noArgs)
 
