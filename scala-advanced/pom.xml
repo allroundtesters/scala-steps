@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>scala-basic</artifactId>
+    <artifactId>scala-advanced</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>
@@ -25,18 +25,6 @@
             <groupId>org.scalatest</groupId>
             <artifactId>scalatest_2.12</artifactId>
             <version>3.0.4</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-actors -->
-        <!--<dependency>-->
-            <!--<groupId>org.scala-lang</groupId>-->
-            <!--<artifactId>scala-actors</artifactId>-->
-            <!--<version>2.11.12</version>-->
-        <!--</dependency>-->
-        <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
-        <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-actor_2.12</artifactId>
-            <version>2.5.8</version>
         </dependency>
     </dependencies>
     <build>
@@ -122,5 +110,4 @@
             <!--</plugin>-->
         </plugins>
     </build>
-
 </project>
